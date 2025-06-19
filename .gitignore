@@ -1,0 +1,17 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+/node_modules/
+/examples/
+*.txt
+*.db
+*.lnk
+*.bin
+*.csv
+*.xlsx
+/temp
+*.rar
+*.sh
+*.disabled

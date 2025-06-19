@@ -1,0 +1,29 @@
+{
+  "name": "carla-demo",
+  "version": "1.0.0",
+  "description": "大创项目展示",
+  "main": "",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ystkc/BCZ-Notice-Examiner.git"
+  },
+  "keywords": [
+  ],
+  "author": "Cereanilla麦花",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ystkc/Carla-Demo"
+  },
+  "homepage": "https://github.com/ystkc/Carla-Demo",
+  "devDependencies": {
+    "gulp": "^5.0.0"
+  },
+  "dependencies": {
+  }
+}
