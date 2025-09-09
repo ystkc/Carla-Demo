@@ -234,6 +234,13 @@ subtitle:
             gap: 30px;
             margin: 25px 0 40px;
         }
+        /* 横屏视频画廊 */
+        .video-gallery-flat {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(640px, 1fr));
+            gap: 30px;
+            margin: 25px 0 40px;
+        }
 
         .video-item {
             background: white;
@@ -256,7 +263,26 @@ subtitle:
             background-color: #101010;
         }
 
+        /* 横屏视频容器专用样式 */
+        .video-container-flat {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 横屏比例 */
+            background-color: #101010;
+
+            display: flex;
+        }
+
         .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-container-flat iframe {
             position: absolute;
             top: 0;
             left: 0;
@@ -469,6 +495,13 @@ subtitle:
 
         <!-- 图片画廊 -->
         <h3 class="section-title">项目演示</h3>
+        <div class="video-gallery-flat">
+          <div class="video-item">
+            <div class="video-container-flat">
+              <iframe src="{{ site.baseurl }}/static/video/intro.mp4" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
         <div class="image-gallery">
             <div class="gallery-item">
                 <img src="{{ site.baseurl }}/static/img/1.jpg" alt="图片1">
