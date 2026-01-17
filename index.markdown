@@ -7,7 +7,7 @@ subtitle:
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>基于的视觉导航系统 - 大创项目展示</title>
+    <title>基于Nomad的视觉导航系统 - 大创项目展示</title>
     <style>
         * {
             margin: 0;
@@ -97,7 +97,7 @@ subtitle:
             padding: 14px 20px;
             border-radius: 8px;
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
-            min-width: 220px;
+            min-width: 380px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
@@ -446,13 +446,13 @@ subtitle:
     </style>
 </head>
 <!-- fontawesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 <body>
     <!-- 标题栏 -->
     <header>
         <div class="container">
-            <h1>视觉导航系统 - 大创项目展示</h1>
-            <h2>项目介绍...</h2>
+            <h1>面向草坪环境的小车自动驾驶技术研究</h1>
+            <h2>基于扩散策略与BEV投影的自主探索与建图</h2>
         </div>
     </header>
 
@@ -462,34 +462,54 @@ subtitle:
             <h3>研究团队</h3>
             <div class="author-list">
                 <div class="author">
-                    <div class="author-icon">Z</div>
-                    <span>张明 (项目负责人)</span>
+                    <div class="author-icon">L</div>
+                    <div class="author-details">
+                        <div class="author-name">廖思宇</div>
+                        <div class="author-title">项目指导老师</div>
+                    </div>
                 </div>
                 <div class="author">
                     <div class="author-icon">L</div>
-                    <span>李华 (首席研究员)</span>
+                    <div class="author-details">
+                        <div class="author-name">廖俪霜</div>
+                        <div class="author-title">统筹项目流程，制定计划，跟踪进度</div>
+                    </div>
                 </div>
                 <div class="author">
-                    <div class="author-icon">W</div>
-                    <span>王林 (算法工程师)</span>
+                    <div class="author-icon">H</div>
+                    <div class="author-details">
+                        <div class="author-name">何申</div>
+                        <div class="author-title">收集研究视觉导航相关技术，整理学习路线</div>
+                    </div>
                 </div>
                 <div class="author">
-                    <div class="author-icon">Z</div>
-                    <span>赵雪 (数据科学家)</span>
+                    <div class="author-icon">C</div>
+                    <div class="author-details">
+                        <div class="author-name">陈锦宇</div>
+                        <div class="author-title">搭建软硬件协同环境，推进项目开发</div>
+                    </div>
+                </div>
+                <div class="author">
+                    <div class="author-icon">L</div>
+                    <div class="author-details">
+                        <div class="author-name">林泽</div>
+                        <div class="author-title">软硬件协同开发，项目展示网站搭建</div>
+                    </div>
+                </div>
+                <div class="author">
+                    <div class="author-icon">H</div>
+                    <div class="author-details">
+                        <div class="author-name">胡书琨</div>
+                        <div class="author-title">整理研究材料，制作答辩PPT</div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- 功能按钮 -->
         <div class="actions">
-            <button id="videoBtn" class="action-btn">
-                <i class="fas fa-video"></i> 展示视频
-            </button>
-            <button id="githubBtn" class="action-btn">
-                <i class="fab fa-github"></i> GitHub项目
-            </button>
-            <button id="dataBtn" class="action-btn">
-                <i class="fas fa-database"></i> 实验数据集
+            <button id="presentationBtn" class="action-btn">
+                <i class="fas fa-presentation"></i> 展示PPT
             </button>
         </div>
 
@@ -500,40 +520,76 @@ subtitle:
             <div class="video-container-flat">
               <iframe src="{{ site.baseurl }}/static/video/intro.mp4" allowfullscreen></iframe>
             </div>
+            <div class="video-info">
+                <h4>系统实机演示视频</h4>
+                <p>展示小车在真实草坪环境中的自主导航与建图过程</p>
+            </div>
           </div>
         </div>
         <div class="image-gallery">
             <div class="gallery-item">
-                <img src="{{ site.baseurl }}/static/img/1.jpg" alt="图片1">
-                <div class="img-caption">说明1</div>
+                <img src="static/img/1.jpg" alt="智能草坪割草机器人">
+                <div class="img-caption">智能草坪割草机器人在草地环境中自主导航</div>
             </div>
             <div class="gallery-item">
-                <img src="{{ site.baseurl }}/static/img/2.jpg" alt="图片2">
-                <div class="img-caption">说明2</div>
+                <img src="static/img/2.jpg" alt="智能草坪割草机器人">
+                <div class="img-caption">智能草坪割草机器人在草地环境中自主导航_2</div>
             </div>
             <div class="gallery-item">
-                <img src="{{ site.baseurl }}/static/img/3.jpg" alt="图片3">
-                <div class="img-caption">说明3</div>
+                <img src="static/img/3.jpg" alt="智能草坪割草机器人">
+                <div class="img-caption">智能草坪割草机器人在草地环境中自主导航_3</div>
             </div>
             <div class="gallery-item">
-                <img src="{{ site.baseurl }}/static/img/4.jpg" alt="图片4">
-                <div class="img-caption">说明4</div>
+                <img src="static/img/4.jpg" alt="智能草坪割草机器人">
+                <div class="img-caption">智能草坪割草机器人在草地环境中自主导航_4</div>
+            </div>
+            <div class="gallery-item">
+                <img src="static/img/5.jpg" alt="小车照片">
+                <div class="img-caption">小车实物照片</div>
+            </div>
+            <div class="gallery-item">
+                <img src="static/img/6.jpg" alt="工作原理">
+                <div class="img-caption">建图过程和步骤</div>
+            </div>
+            <div class="gallery-item">
+                <img src="static/img/7.jpg" alt="硬件优化">
+                <div class="img-caption">硬件优化前后分割效果对比</div>
+            </div>
+            <div class="gallery-item">
+                <img src="static/img/8.jpg" alt="使用Yolo-v8">
+                <div class="img-caption">使用Yolo-v8进行边界识别</div>
             </div>
         </div>
 
         <!-- 项目介绍 -->
         <h3 class="section-title">项目介绍</h3>
         <section class="project-intro">
-            <p>本项目旨在开发一种基于<span class="highlight">技术</span>的视觉导航技术</p>
+            <p>本项目旨在开发一种基于<span class="highlight">纯视觉、扩散策略和BEV投影</span>的自主探索与建图框架，用于草坪环境下的自动驾驶小车。项目利用 YOLOv8 和 NoMaD 等先进算法，在保证低成本（仅使用RGB-D相机）的同时，实现高鲁棒性、高实时性的自主导航。</p>
             
             <p>该系统的主要技术优势包括：</p>
             <ul>
-                <li>创新的双路径特征提取机制</li>
-                <li>自适应空间注意力模型</li>
-                <li>三维可视化结果展示界面</li>
+                <li><strong>创新的双路径特征提取机制：</strong>结合NoMaD扩散策略生成多样性轨迹，通过BEV验证确保安全</li>
+                <li><strong>自适应空间注意力模型：</strong>YOLOv8-seg实现草坪/非草坪像素级分割，在复杂光照下保持高鲁棒性</li>
+                <li><strong>边缘端实时推理优化：</strong>通过TensorRT加速，将推理时间从4000ms降至200-300ms</li>
+                <li><strong>三维可视化结果展示：</strong>BEV鸟瞰视角提供全局地图与路径规划可视化</li>
             </ul>
             
-            <p>经过严格实地验证，该系统在多个领域的应用效果优于传统方法。</p>
+            <p>经过严格实地验证，该系统在多个领域的应用效果优于传统方法，成功解决了传统SLAM在重复环境中定位失败、依赖电子围栏部署繁琐、以及深度学习模型在嵌入式平台推理延迟高等问题。</p>
+
+            <div class="features">
+                <div class="feature">
+                    <h4>低成本硬件</h4>
+                    <p>仅使用RGB-D相机，无需昂贵的LiDAR或RTK-GPS，大幅降低硬件成本</p>
+                </div>
+                <div class="feature">
+                    <h4>纯视觉导航</h4>
+                    <p>基于视觉感知实现自主探索与建图，适应复杂非结构化环境</p>
+                </div>
+                <div class="feature">
+                    <h4>实时性能</h4>
+                    <p>整体规划延迟控制在200ms内，满足机器人实时决策要求</p>
+                </div>
+            </div>
         </section>
 
         <!-- 视频画廊 -->
@@ -544,8 +600,8 @@ subtitle:
                     <iframe src="{{ site.baseurl }}/static/video/1.mp4" allowfullscreen></iframe>
                 </div>
                 <div class="video-info">
-                    <h4>系统核心功能演示</h4>
-                    <p>展示系统的主要功能模块和用户界面操作流程</p>
+                    <h4>小车导航过程1</h4>
+                    <p></p>
                 </div>
             </div>
             <div class="video-item">
@@ -553,8 +609,17 @@ subtitle:
                     <iframe src="{{ site.baseurl }}/static/video/2.mp4" allowfullscreen></iframe>
                 </div>
                 <div class="video-info">
-                    <h4>演示</h4>
-                    <p>说明</p>
+                    <h4>小车导航过程2</h4>
+                    <p></p>
+                </div>
+            </div>
+            <div class="video-item">
+                <div class="video-container">
+                    <iframe src="{{ site.baseurl }}/static/video/3.mp4" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h4>小车导航过程3</h4>
+                    <p></p>
                 </div>
             </div>
         </div>
@@ -563,36 +628,30 @@ subtitle:
         <section class="references">
             <h3>参考文献</h3>
             <ol class="reference-list">
-                <li>参考文献1</li>
+                <li>Sridhar A, Shah D, Glossop C, et al. NoMaD: Goal Masked Diffusion Policies for Navigation and Exploration[C]//2024 IEEE International Conference on Robotics and Automation (ICRA). IEEE, 2024: 63-70.</li>
+                <li>Sani E, Sgorbissa A, Carpin S. Improving the ROS 2 Navigation Stack with Real-Time Local Costmap Updates for Agricultural Applications[C]//2024 IEEE International Conference on Robotics and Automation (ICRA). IEEE, 2024: 17701-17707.</li>
+                <li>Jocher, G., Chaurasia, A., & Qiu, J. (2023). Ultralytics YOLOv8 (Version 8.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.7629658</li>
+                <li>NVIDIA. TensorRT: High-Performance Deep Learning Inference[EB/OL]. https://developer.nvidia.com/tensorrt, 2024.</li>
             </ol>
         </section>
     </div>
 
     <footer>
         <div class="container">
-            <p>研究组 © 2023 | 研究中心</p>
-            <p>联系方式： | 地址：</p>
+            <p> © 2025 | 中山大学</p>
+            <p>联系方式：....@mail2.sysu.edu.cn</p>
         </div>
     </footer>
 
     <script>
         // 功能按钮交互
-        document.getElementById('videoBtn').addEventListener('click', function() {
-            alert('即将跳转到项目展示视频页面...');
-            // 实际应用中在此处添加视频页面跳转代码
-            // window.location.href = 'https://example.com/project-video';
-        });
-
-        document.getElementById('githubBtn').addEventListener('click', function() {
-            alert('即将跳转到GitHub项目仓库...');
-            // 实际应用中在此处添加GitHub页面跳转代码
-            // window.location.href = 'https://github.com/example/project';
-        });
-
-        document.getElementById('dataBtn').addEventListener('click', function() {
-            alert('即将跳转到实验数据下载页面...');
-            // 实际应用中在此处添加数据页面跳转代码
-            // window.location.href = 'https://example.com/project-data';
+        document.getElementById('presentationBtn').addEventListener('click', function() {
+            // 开始下载：static/pdf/presentation.pdf
+            const url = '{{ site.baseurl }}/static/pdf/presentation.pdf';
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'presentation.pdf';
+            a.click();
         });
 
         // 图片画廊交互
