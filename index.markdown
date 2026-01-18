@@ -354,6 +354,7 @@ subtitle:
             border-radius: 12px;
             box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
             margin: 45px 0;
+            counter-reset: reference;
         }
 
         .references h3 {
@@ -509,7 +510,7 @@ subtitle:
         <!-- 功能按钮 -->
         <div class="actions">
             <button id="presentationBtn" class="action-btn">
-                <i class="fas fa-presentation"></i> 展示PPT
+                <i class="fas fa-download"></i> 展示PPT
             </button>
         </div>
 
